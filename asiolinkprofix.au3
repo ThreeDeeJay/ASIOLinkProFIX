@@ -93,7 +93,6 @@ If @OSArch = "X64" Then
 	FileCopy($fixfiles[4], $sALPInstallDir & "\x64",1)
 	Sleep(2000)
 	RunWait($alpfilesX64[4] & " install", $sALPInstallDir & "\x64")
-	MsgBox(0,"DONE","DONE. Please wait a few seconds until the devices reappear again on your sound control panel.")
 ElseIf @OSArch = "X86" Then
 	RunWait($alpfilesx86[4] & " uninstall", $sALPInstallDir)
 	Sleep(2000)
@@ -103,7 +102,6 @@ ElseIf @OSArch = "X86" Then
 	FileCopy($fixfiles[4], $sALPInstallDir,1)
 	Sleep(2000)
 	RunWait($alpfilesX86[4] & " install", $sALPInstallDir)
-	MsgBox(0,"DONE","DONE. Please wait a few seconds until the devices reappear again on your sound control panel.")
 EndIf
 
 
